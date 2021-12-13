@@ -1,0 +1,14 @@
+.main-wrapper {
+    padding-top: .5rem;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 4rem;
+}
+
+.main-wrapper__title {
+    font-size: 16px;
+    color: var(--creemy);
+    font-weight: 100;
+    margin-bottom: .8rem;
+    letter-spacing: 1.2px;
+}

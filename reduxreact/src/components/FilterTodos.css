@@ -1,0 +1,24 @@
+.filter-buttons {
+    display: flex;
+    padding-bottom: 1rem;
+}
+
+.filter-buttons__hide-done,
+.filter-buttons__show-all {
+    padding: 0.1rem;
+    width: 8rem;
+    background-color: var(--ashy);
+    letter-spacing: 1.1px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.25s;
+    border: .2px solid rgb(194, 199, 184);
+    margin-right: .5rem;
+}
+
+.filter-buttons__hide-done:hover,
+.filter-buttons__show-all:hover {
+    background-color: white;
+    cursor: pointer;
+
+}

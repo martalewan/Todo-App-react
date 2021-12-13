@@ -1,0 +1,92 @@
+.card-buttons__button--done,
+.card-buttons__button--remove,
+.card-buttons__button--edit,
+.card-buttons__button--submit-edit {
+    margin-top: .5rem;
+}
+
+.card-buttons__button--done,
+.card-buttons__button--edit,
+.card-buttons__button--submit-edit {
+    margin-right: 1.8rem;
+}
+
+.card-buttons__button--done,
+.card-buttons__button--remove,
+.card-buttons__button--edit,
+.card-buttons__button--submit-edit {
+    border: 0px;
+    position: relative;
+    color: var(--bottle);
+}
+
+.card-buttons__button--done:before,
+.card-buttons__button--done:after,
+.card-buttons__button--remove:before,
+.card-buttons__button--remove:after,
+.card-buttons__button--edit:before,
+.card-buttons__button--edit:after,
+.card-buttons__button--submit-edit:before,
+.card-buttons__button--submit-edit:after {
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+    border-style: solid;
+    border-width: 0;
+    content: "";
+    height: 26px;
+    position: absolute;
+    width: 26px;
+}
+
+.card-buttons__button--done:before,
+.card-buttons__button--remove:before,
+.card-buttons__button--edit:before,
+.card-buttons__button--submit-edit:before {
+    border-left-width: 2px;
+    border-top-width: 2px;
+    left: -4px;
+    top: -4px;
+}
+
+.card-buttons__button--done:after,
+.card-buttons__button--remove:after,
+.card-buttons__button--edit:after,
+.card-buttons__button--submit-edit:after {
+    border-bottom-width: 2px;
+    border-right-width: 2px;
+    bottom: -4px;
+    right: -4px;
+}
+
+.card-buttons__button--done:hover:before,
+.card-buttons__button--done:hover:after,
+.card-buttons__button--remove:hover:before,
+.card-buttons__button--remove:hover:after,
+.card-buttons__button--edit:hover:before,
+.card-buttons__button--edit:hover:after,
+.card-buttons__button--submit-edit:hover:before,
+.card-buttons__button--submit-edit:hover:after {
+    height: 100%;
+    width: 100%;
+
+}
+
+.card-buttons__button--done,
+.card-buttons__button--remove,
+.card-buttons__button--edit,
+.card-buttons__button--submit-edit {
+    background-color: var(--bottle);
+    box-shadow: 0 4px 8px 0 rgba(135, 135, 135, 0.2);
+    height: 2.5rem;
+    width: 2.5rem;
+    padding-top: .3rem;
+}
+
+.icon {
+    height: 1.2rem;
+}
+
+.card-buttons {
+    display: flex;
+    justify-content: flex-end;
+}

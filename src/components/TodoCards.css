@@ -1,0 +1,81 @@
+
+.todo-wrapper__cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.todo-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.775);
+    padding: 1.2rem 1.5rem;
+    margin-bottom: .8rem;
+    transition: all .4s ease;
+    width: 600px;
+    min-width: 250px;
+    height: 220px;
+    box-shadow: 0 4px 8px 0 rgba(135, 135, 135, 0.2);
+    color: var(--dark-bottle);
+    overflow: hidden;
+    text-align: left;
+    overflow-wrap: break-word;
+    scroll-behavior: auto;
+    line-height: 1.2;
+}
+
+.todo-card:hover {
+    border: 1px solid white;
+}
+.card-main {
+    display: flex;
+    flex-direction: column;
+}
+
+.todo-card.completed-card.hide {
+    display: none;
+}
+
+.card-main__title {
+    padding-bottom: .5rem;
+    border-bottom: 1px solid rgb(98, 94, 94);
+}
+
+.card-main__description {
+    padding-top: .5rem;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.completed-card {
+    background-color: rgba(255, 255, 255, 0.245);
+    order: 2;
+}
+@media screen and (min-width: 760px) {
+    .todo-card {
+      margin-right: .8rem;
+    }
+  }
+
+  .edit__title-input,
+  .edit__text-input {
+    max-width: 900px;
+    width: 100%;
+    color: var(--bottle);
+    font-size: 16px;
+    letter-spacing: .6px;
+    background: none;
+    font-weight: 300;
+    border: .2px solid rgb(81, 83, 75);
+    padding: .2rem;
+    caret-color: var(--bottle);
+    margin-bottom: 1rem;
+    transition: all 0.25s;
+  }
+
+
